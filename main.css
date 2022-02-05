@@ -469,7 +469,8 @@ color: blue;
   }
   .btn7:hover{
         color:rgb(255, 255, 255);
-        transform:scale(1.2);
+        box-shadow: 0 0 5px white;
+        transform:scale(1.1);
         transition:transform 0.5s ease-out;
   }
 /* Project7 Ends */
