@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Nunito:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+/* Project1 Begin*/
+.handleForm{
+    border-radius: 1rem;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.3);
+}
+.form-control.success{
+    border:2px solid green;
+}
+.form-control.error{
+    border:2px solid red;
+}
+.form-text{
+    color:red;
+    visibility:hidden;
+}
+.form-text.error{
+    color: red;
+    visibility: visible;
+}
+/* Project1 Ends*/
+
+/* Project2 Begins */
+.container1{
+    box-sizing: border-box;
+    margin:2rem 0;
+   
+}
+.seats{perspective:1000px;
+
+}
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    
+    transform: rotateX(-45deg);
+    
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+     
+  }
+.innercontainer select{
+    background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.legend{
+    background: rgba(0, 0, 0, 0.1);
+  padding: 5px 2px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left:2rem;
+}
+.seat{
+    height:1rem;
+    width:1rem;
+    background-color: #444451;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 2px;
+    
+}
+
+.row1{
+    display: flex;
+    
+}
+.legend li{
+    display: flex;
+}
+.legend label{
+    padding:2px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 18px;
+  }
+  .seat:nth-of-type(2) {
+    margin-right: 18px;
+  }
+.seat:hover{
+
+    transform:scale(1.2);
+    cursor:pointer;
+}
+.seat.occupied{
+    background-color: white;
+}
+.seat.selected{
+    background-color:#6feaf6;
+}
+.legend .seat:hover{
+    transform:scale(1);
+    cursor:default;
+}
+.seat.occupied:hover{
+    cursor:default;
+    transform:scale(1);
+}
+#statement{
+    margin-left:0.7rem;
+}
+#statement span{
+    color: #6feaf6;
+}
+/* Project2 Ends */
+
+/* Project3 Begins */
+
+.video{
+    display: block;
+    cursor:pointer;
+    width: 60%;
+    background-color: black;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    
+}
+
+.controls{
+    display: flex;
+    background-color:black;
+    padding:0.5rem;
+    width:60%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+}
+
+.progressBar{
+    margin-top:3px;
+    width: 100%;
+}
+#timeStamp{
+    display: inline-block;
+    margin-left:5px;
+    color:white;
+    margin-top: 3px;
+
+}
+.btn3{
+    cursor: pointer;
+    padding:4px;
+    margin-right:2px;
+    background-color:transparent;
+    border: black solid;
+}
+.btn3.play{
+    color:green;
+}
+.btn3.stop{
+    color:red;
+}
+.btn3.pause{
+    color:white;
+}
+/* Project 3 ends */
+/* Project 4 begins */
+.middle4{
+    display:flex;
+    width: 13rem;
+    justify-content:space-between;
+    align-items: center;
+    margin: 1rem;
+}
+/* Project 4 ends */
+
+/* Project5 begins */
+
+  
+ 
+  .container5 {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+  }
+  
+  .container5 aside {
+    padding: 10px 20px;
+    width: 250px;
+    border-right: 1px solid #111;
+  }
+  
+  .container5 button {
+    cursor: pointer;
+    background-color: #fff;
+    border: solid 1px #111;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  main {
+    flex: 1;
+    padding: 10px 20px;
+  }
+  
+  #main5 h2 {
+    border-bottom: 1px solid #111;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+  
+  #main5 h3 {
+    
+    border-bottom: 1px solid #111;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 20px 0 0;
+  }
+  
+  #main5 .person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+/* Project5 Ends */
+/* Project6 Begins  */
+.container6{
+    margin:0;
+    padding:0;
+    transition: transform 1s ease;
+}
+.container6.show-nav {
+    /* Width of nav */
+    transform: translateX(200px);
+    
+  }
+.nav5{
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    background-color:purple;
+    position:fixed;
+    height: 100%;
+    top: 0;left: 0;
+    
+    width: 200px;
+    transform:translateX(-100%);
+    text-align: center;
+}
+.nav5 img{
+    border-radius: 50%;
+    width:6rem;
+    margin-top:2rem;
+} 
+.nav5 ul{
+    list-style: none;
+    color: white;
+    justify-content: center;
+    
+}
+.nav5 ul li{
+    text-decoration: none;
+    margin-bottom: 2rem;
+    color: white;
+    margin-right: 3rem;;
+}
+.nav5 a{
+    text-decoration: none;
+    color: white;
+}
+.nav5 a:hover{
+    text-decoration: underline;
+}
+
+.Acontainer5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(14, 14, 53);
+    color: white;
+    padding:2rem;
+    
+}
+.Acontainer5 .toggle{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.Acontainer5 button{
+    background-color:rgba(0,0,0,0.7);
+    color:white;
+    border-radius: 5px;
+    padding:7px;
+}
+.Bcontainer5 {
+    padding:2rem;
+    color: black;
+}
+.container-modal{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(22, 21, 21, 0.3);
+    visibility: hidden;
+    
+}
+.modal5{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color:white;
+padding:2rem;
+animation:wap 2s linear ;
+
+margin: 1rem;
+}
+@keyframes wap{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.modal-header{
+    background-color:rgb(14, 14, 53);
+    color:white;
+    text-align: center;
+    border-radius:2rem;
+}
+.modal5 .close-btn{
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color:transparent;
+    
+    border-radius:0.5rem;
+    border:0px;
+    padding:2px 5px;
+    width:2rem;height:2rem;
+    cursor:pointer;
+}
+.modal-content div{
+    margin:1rem 0px;
+
+}
+.modal-content div input{
+    display:block;
+    width:100%;
+    margin:0.2rem 0px;
+    padding:0.5rem;
+}
+.modal-content .submit-btn{
+    width:80%;
+    color: white;
+    background-color:rgb(14, 14, 53);
+    border:0px;
+    border-radius:1rem;
+    padding:0.6rem;
+}
+/* Project6 Ends */
+/* Project7 Begins */
+.container7{font-family: 'Nunito', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(105, 105, 233);
+    height:800px;
+    overflow:scroll;
+}
+.filter-container input{
+    width: 90%;
+    padding:0.8rem;
+    margin:1rem 0;
+    border:1px solid black;
+    border-radius:10px;
+}
+
+.post{position: relative;
+    border:1px solid black;
+    padding:0.2rem;
+    margin: 3rem auto;
+    background-color:rgb(54, 54, 189);
+    border-radius:1rem;
+    width:80%;
+    
+}
+.post .number{
+position: absolute;
+top:-15px;
+left: -15px;
+background-color: white;
+width: 3rem;
+height: 3rem;
+border-radius:50%;
+display:flex;
+justify-content: center;
+align-items: center;
+color: blue;
+}
+.loader {
+    opacity: 0;
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transition: opacity 0.3s ease-in;
+  }
+  
+  .loader.show {
+    opacity: 1;
+  }
+  
+  .circle {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    animation: bounce 0.5s ease-in infinite;
+  }
+  
+  .circle:nth-of-type(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .circle:nth-of-type(3) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .btn7{
+      width:50%;
+      align-self: center;
+      padding:0.5rem;
+      font-size: 1.5rem;
+      border-radius:1rem;
+      background-color:rgb(75, 75, 223);
+      border:0;
+      margin:1rem 0;
+    
+  }
+  .btn7:hover{
+        color:rgb(255, 255, 255);
+        transform:scale(1.1);
+        transition:transform 0.5s ease-out;
+        box-shadow: 0 0 5px white;
+  }
+/* Project7 Ends */
+/* Project8 Begins */
+.container8 {
+    color:black;
+    margin: 30px auto;
+    width: 350px;
+  }
+  
+  
+  .inc-exp-container {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .inc-exp-container > div:first-of-type {
+    border-right: 1px solid #dedede;
+  }
+  
+  .container8 .money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  
+  .container8 .money.plus {
+    color: #2ecc71;
+  }
+  
+  .container8 .money.minus {
+    color: #c0392b;
+  }
+  
+  .container8 label {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  .container8 input{
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .btn8 {
+    cursor: pointer;
+    background-color: #9c88ff;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .btn:focus,
+  .delete-btn:focus {
+    outline: 0;
+  }
+  
+  .list8 {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  
+  .list8 li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .list8 li.plus8 {
+    border-right: 5px solid #2ecc71;
+  }
+  
+  .list8 li.minus8 {
+    border-right: 5px solid #c0392b;
+  }
+  
+  .delete-btn8 {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .list8 li:hover .delete-btn8 {
+    opacity: 1;
+  }
+/* Project8 ends */
