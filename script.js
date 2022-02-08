@@ -396,8 +396,10 @@ function showData(){
     balancee.innerText='$'+(inc-exp);
 }
 function updatePage(){
+  if(localStorage.getItem('data')!=null){
     data=JSON.parse(localStorage.getItem('data'));
     showData();
+  }
 }
 updatePage();
 
