@@ -1,3 +1,14 @@
+
+window.speechSynthesis.cancel();
+let btnTop=document.getElementById('btnTop');
+btnTop.addEventListener('click',()=>{
+    let message=new SpeechSynthesisUtterance();
+    message.text="Hello! This is Eklavya's website. It contains some simple projects he has done so far. Have a look. You may contact him using the details mentioned.";
+    
+    window.speechSynthesis.cancel();
+    speechSynthesis.speak(message); 
+});
+btnTop.click();
 // Project1 Begins
 
 function project1() {
